@@ -1,0 +1,13 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+	@apply bg-soft-pink font-lato;
+}
+
+h1,
+h2,
+h3 {
+	@apply font-raleway;
+}
