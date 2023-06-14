@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Todo, TodoContext } from "../../context";
 import DeleteBtn from "../Shared/DeleteBtn";
+import UpgradeStatus from '../UI/UpgradeStatus'
 
 
 type TodoCardProps = {
@@ -25,8 +26,11 @@ const TodoCard: React.FC<TodoCardProps> = ({ todo }) => {
 
 	return (
 		<>
-			<span className="flex mb-2">
+			<span className="flex mb-2 space-x-2 relative">
 				<DeleteBtn id={todo.id} />
+				<span className="lg:hidden flex">
+					<UpgradeStatus todo={todo} />
+				</span>
 			</span>
 			<input
 				name="title"
