@@ -40,6 +40,7 @@ Doraggu is built with:
 - [TailwindCSS](https://tailwindcss.com/) 🎨
 - [React-dnd](https://react-dnd.github.io/react-dnd/about) 🎯
 - [React-hot-toast](https://react-hot-toast.com/) 🔥
+- [React-icons](https://react-icons.github.io/react-icons/) 🔳
 
 
 
