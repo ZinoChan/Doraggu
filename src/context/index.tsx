@@ -1,4 +1,5 @@
 import React, { createContext, useState, ReactNode } from 'react';
+import { toast } from 'react-hot-toast';
 import { v4 as uuidv4 } from 'uuid';
 
 export interface Todo {
@@ -39,6 +40,7 @@ export const TodoProvider: React.FC<TodoProviderProps> = ({ children }) => {
 	const [todos, setTodos] = useState<Todo[]>([]);
 	const deleteTask = (id: string) => {
 		setTodos(prev => prev.filter(todo => todo.id !== id));
+		toast.success("Task Deleted")
 	}
 
 	return (
