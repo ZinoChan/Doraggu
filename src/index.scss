@@ -3,11 +3,51 @@
 @import 'tailwindcss/utilities';
 
 body {
-	@apply bg-soft-pink font-lato;
+	@apply bg-soft-pink font-lato text-black2;
 }
 
 h1,
 h2,
 h3 {
-	@apply font-raleway;
+	@apply font-raleway text-black1;
+}
+
+.custom-scrollbar {
+	&::-webkit-scrollbar {
+		width: 6px;
+		background-color: #f1f1f1;
+		border-radius: 4px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #d3d3d3;
+		border-radius: 4px;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: #a8a8a8;
+	}
+
+	/* For Firefox */
+	&::-moz-scrollbar {
+		width: 8px;
+		background-color: #f1f1f1;
+		border-radius: 4px;
+	}
+
+	&::-moz-scrollbar-thumb {
+		background-color: #d3d3d3;
+		border-radius: 4px;
+	}
+
+	&::-moz-scrollbar-thumb:hover {
+		background-color: #a8a8a8;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.order-0 {
+		order: 0;
+	}
 }
